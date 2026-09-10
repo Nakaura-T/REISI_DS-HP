@@ -130,7 +130,6 @@ h2 { margin-top: 12px; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.5; fo
 .journey-year { color: var(--blue); font-family: Arial, sans-serif; font-size: 27px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.4; }
 .journey-card h3 { margin-top: 18px; font-size: 22px; font-weight: 600; line-height: 1.65; }
 .journey-card > p { margin-top: 15px; color: var(--muted); font-size: 15px; line-height: 1.95; }
-.journey-card > p + .timeline-link { margin-top: 12px; color: var(--blue); }
 .journal-highlight { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; min-height: 66px; margin-top: 18px; }
 .journal-highlight > span:first-child { font-family: Georgia, var(--sans); font-size: 17px; line-height: 1.5; }
 .author-badge { flex: none; padding: 3px 9px; color: #24558c; background: #e7f0fb; font-size: 11px; }
@@ -177,9 +176,8 @@ h2 { margin-top: 12px; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.5; fo
 .students-lead + p { margin-top: 16px; color: var(--muted); font-size: 15px; }
 .admission-affiliation { margin-top: 20px; padding: 16px 18px; color: var(--muted); background: #fff; border: 1px solid #dfd2be; font-size: 14px; line-height: 1.9; }
 .admission-affiliation a { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; color: var(--blue); font-weight: 500; text-decoration: underline; }
-.lab-photo-placeholder, .member-photo-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); background: var(--wash); border: 1px dashed var(--line); font-size: 13px; line-height: 1.7; }
-.lab-photo-placeholder { margin-top: 24px; aspect-ratio: 16 / 9; }
-.member-photo-placeholder { width: 132px; aspect-ratio: 1; margin-bottom: 18px; }
+.lab-photo-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); background: var(--wash); border: 1px dashed var(--line); font-size: 13px; line-height: 1.7; margin-top: 24px; aspect-ratio: 16 / 9; }
+.member-photo { display: block; width: 132px; aspect-ratio: 3 / 4; margin-bottom: 18px; object-fit: cover; }
 .student-topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; margin-top: 38px; padding-block: 28px; border-top: 1px solid #dfd2be; border-bottom: 1px solid #dfd2be; }
 .student-topics > div { display: flex; flex-direction: column; }
 .student-topics h3 { font-size: 18px; font-weight: 600; line-height: 1.7; }
