@@ -2,7 +2,7 @@
 
 ## 優先した資料
 
-- 主資料：ユーザー提供の `Paper_Data/citations.txt`（BibTeX形式、1999〜2026年のエントリを含む）。全体を確認して選定。
+- 主資料：ユーザー提供の `Hidden_Data/citations.txt`（BibTeX形式、1999〜2026年のエントリを含む）。全体を確認して選定。
 - `citations.csv` は20件のみだったため、最終的な選定はTXT版を優先。
 - 所属・氏名・住所・連絡先：ユーザー提供の署名。
 - 英語氏名のMD, PhD表記：読み取りできたGoogle Scholarプロフィール。
@@ -17,13 +17,14 @@
 3. **機械学習・深層学習**：MRIによる機械学習、深層学習によるノイズ低減。
 4. **生成AI**：読影レポート生成、構造化MRIレポートを用いたLLMの評価。
 
-年表示は選んだ論文の出版年の範囲であり、研究テーマの開始・終了年や研究室の設立年を示すものではありません。過去の論文は「中浦 猛の代表業績」と表記しています。
+研究業績は「研究の歩みと代表業績」に掲載しています。年表示は2005、2011–、2018–、2024–で、各分野の選定論文の開始年を示す構成です。表示に関する説明文と著者順ラベルは、ユーザーの依頼により削除しました。
 
 ## 代表論文の選定
 
 | 年 | BibTeXキー | 掲載誌 | 中浦先生の著者順 | 掲載の意図 |
 | --- | --- | --- | --- | --- |
 | 2005 | `nakaura2005three` | American Journal of Roentgenology 185(6):1554–1557 | 筆頭 | AI以前からの、画像融合と臨床課題への取り組み |
+| 2005 | `nakaura2005fusion` | Circulation 112(3):e47–e48 | 筆頭 | 心筋SPECTと心臓CTの融合画像の報告 |
 | 2011 | `nakaura2011abdominal` | Radiology 261(2):467–476 | 筆頭 | 腎機能障害患者の腹部CTでの造影剤量低減 |
 | 2012 | `nakaura2012low` | Radiology 264(2):445–454 | 筆頭 | 低管電圧と再構成技術、造影剤量・被ばく・画質の検討 |
 | 2017 | `iyama2017feasibility` | Radiology 284(1):153–160 | 第2 | 非造影腰椎CTでのモデルベース逐次近似再構成 |
@@ -31,9 +32,13 @@
 | 2018 | `nakagawa2018machine` | European Journal of Radiology 108:147–154 | 第2 | MRIから機械学習へつながる具体的な鑑別研究 |
 | 2022 | `uetani2022hybrid` | European Radiology 32(7):4527–4536 | 第2 | 深層学習・圧縮センシングによる画像ノイズ低減 |
 | 2024 | `nakaura2024preliminary` | Japanese Journal of Radiology 42(2):190–200 | 筆頭 | 生成AIによる読影レポートの比較評価 |
+| 2025 | `kobayashi2025impact` | European Radiology 35(6):3499–3507 | 第2 | 深層学習再構成による線量低減と発がんリスク推定の実臨床データによる検討 |
 | 2026 | `nakaura2026intra` | European Radiology 36(2):1594–1604 | 筆頭 | 構造化MRIレポートによるLLMの脳腫瘍鑑別評価 |
+| 2026 | `nakaura2025evaluation` | European Journal of Radiology 195:112608 | 筆頭 | DeepSeek-R1など10種類のLLMを放射線科専門医試験の画像なし105問で比較。ユーザー指定論文 |
 
 著者順はTXT内のauthorフィールドで確認。第2著者という表記から、責任著者・指導担当などの役割までは推定していません。著者は最初の3名を略記し、以降はet al.としています。総説中心にならないよう、具体的な撮影・解析・評価を扱う論文を選びました。
+
+この表の著者順は編集用の記録です。公開ページでは著者一覧を残し、研究項目・各論文の著者順ラベルは表示していません。
 
 2018年の論文名の `primary cerebral nervous system lymphoma` は、提供TXTの表記をそのまま採用しています。
 
@@ -83,5 +88,14 @@ TXTには重複登録、訂正記事、学会抄録、書誌情報の異なる�
 
 - 年表示が2017年・2025年・2026年で止まって見えるという指摘を受け、2005年（単年表示）以外は終了年を省き「2011–」「2018–」「2024–」のように開始年のみの表示に変更。研究が継続中であることを示す意図で、実際の活動期間を確定するものではない。
 - 「撮影・再構成」の見出しを「CT/MRI 撮影技術・再構成」に変更。
-- 掲載誌が「Radiology」とだけ表示され単一誌に限定される印象だったため、`Paper_Data/citations.txt` から論文を追加し、バッジを「Radiology ほか」に変更。総説を避け、造影剤・被ばく・撮影条件という同分野の具体的な原著論文から選定（他候補：`hoshika2022comparison` Physica Medica 2022、`sakabe2020decreasing` BJR|Open 2020）。
+- 掲載誌が「Radiology」とだけ表示され単一誌に限定される印象だったため、`Hidden_Data/citations.txt` から論文を追加し、バッジを「Radiology ほか」に変更。総説を避け、造影剤・被ばく・撮影条件という同分野の具体的な原著論文から選定（他候補：`hoshika2022comparison` Physica Medica 2022、`sakabe2020decreasing` BJR|Open 2020）。
 - 追加論文はユーザー希望により被引用数を優先し、OpenAlex（著者ID A5057900219）で撮影・再構成系の候補をすべて突き合わせて選定：`kidoh2014reduction`（Clinical Radiology、第2著者、被引用102件）を採用。次点は`nagayama2018dual`（European Radiology、59件）、`yoshida2018magnetic`（European Radiology、55件）。被引用数は2026-09-10時点のOpenAlex集計であり、変動する。
+
+## 2026-09-10：著者順表示の整理・LLM論文追加・資料の移動
+
+- ユーザー指定の論文選定・年表示の注記を削除。研究項目のバッジと各論文の「筆頭著者」「第2著者」等のラベルも削除し、著者一覧は残した。
+- 生成AI・LLMに `nakaura2025evaluation` を追加し、同分野3件・全体12件に更新。題名は “Evaluation of DeepSeek-R1 and contemporary large language models on the radiology board examination: A milestone achieved as open-source model matches performance with closed-source model”。著者略記は Nakaura T, Kobayashi N, Masuda T, et al.
+- ユーザー指定の[出版社ページ](https://www.ejradiology.com/article/S0720-048X%2825%2900694-1/abstract)は取得時403だったため、[PubMed（PMID 41448020）](https://pubmed.ncbi.nlm.nih.gov/41448020/)のPII・DOI・著者・巻号と提供TXTを照合。ページからのリンク先にはユーザー指定URLを使用した。
+- 正式な巻号は European Journal of Radiology. 2026;195:112608、DOIは10.1016/j.ejrad.2025.112608。オンライン公開は2025-12-13、巻号の刊行は2026年2月。BibTeXキーと元資料の2025年表記は保ち、サイトには巻号の2026年を掲載した。
+- 追加論文の紹介は画像を含まない専門医試験の問題による評価とし、臨床画像の診断性能として説明していない。
+- READMEと引用資料は既存の `Hidden_Data/` に集約。更新後のREADMEは `Hidden_Data/README.md`、元資料は `Hidden_Data/citations.txt`。引用資料は内容を変更せずに移動し、移動前後のSHA-256が一致することを確認した。元の資料フォルダは空になった時点で削除し、編集メモと制作支援ファイルの参照パスを更新した。
