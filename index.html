@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15344b">
+  <title>中浦研究室 | 熊本大学 データサイエンス分野</title>
+  <meta name="description" content="熊本大学・中浦研究室では、CT・MRIの撮影条件、機械学習による画像解析、生成AIによる読影レポートの評価を研究しています。代表論文と、配属・進学・見学の相談先を掲載しています。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="中浦研究室 | 熊本大学 医用画像・データサイエンス">
+  <meta property="og:description" content="CT・MRIの撮影から、画像解析、読影レポートまで。熊本大学・中浦研究室の研究内容、代表論文、配属・進学・見学の相談先。">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <div class="affiliation-bar">
+    <div class="container affiliation-inner">
+      <span>熊本大学 半導体・デジタル研究教育機構</span>
+      <span class="proposal-label">サイト原案</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="中浦研究室 トップへ">
+        <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><path d="M9 34V10l26 24V10" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="9" cy="10" r="4" fill="#1d64d8"/><circle cx="35" cy="34" r="4" fill="#28b7c7"/></svg>
+        <span class="brand-text"><strong>中浦研究室<span>｜データサイエンス</span></strong><span class="brand-en" lang="en">Nakaura Lab<span class="brand-university">, Kumamoto University</span></span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden><span class="menu-label">メニュー</span><span class="menu-lines" aria-hidden="true"></span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="メインナビゲーション">
+        <a href="#research">研究内容</a>
+        <a href="#achievements">研究業績</a>
+        <a href="#students">学生の方へ</a>
+        <a href="#member">教員紹介</a>
+        <a class="nav-contact" href="#contact">お問い合わせ <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">熊本大学 データサイエンス分野</p>
+          <h1 id="hero-title">医用画像とAIで、<br>診断を研究する。</h1>
+          <p class="hero-lead">CT・MRIの撮影から、<br>画像解析、読影レポートまで。</p>
+          <p class="hero-description">検査の負担を減らしながら、診断に必要な情報を得るにはどうすればよいか。中浦研究室では、撮影条件の工夫や機械学習、生成AIを使って、この課題を研究しています。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">研究内容を知る <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#students">学生の方へ <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#achievements">代表業績を見る <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="visual-heading"><span lang="en">Medical imaging / Data science</span><span class="concept-label">概念図</span></div>
+          <div class="analysis-board">
+            <div class="scan-panel">
+              <p>CT・MRI</p>
+              <svg class="data-illustration" viewBox="0 0 260 250" aria-hidden="true">
+                <defs><pattern id="scan-grid" width="26" height="25" patternUnits="userSpaceOnUse"><path d="M26 0H0V25" fill="none" stroke="#43637d" stroke-width=".6"/></pattern></defs>
+                <rect width="260" height="250" fill="url(#scan-grid)"/>
+                <g fill="none" stroke="#d1e3f3" stroke-width="2">
+                  <path d="M130 20C77 17 38 58 36 112c-3 57 33 110 94 116 61-6 97-59 94-116-2-54-41-95-94-92Z"/>
+                  <path d="M125 38C99 29 69 55 58 82c-10 24-9 61 4 85 12 24 36 39 63 42V38Z" fill="#274e6c"/>
+                  <path d="M135 38c26-9 56 17 67 44 10 24 9 61-4 85-12 24-36 39-63 42V38Z" fill="#274e6c"/>
+                  <path d="M90 53 77 77l13 19-21 22 12 22-8 23 24 19 9 20M109 53l-8 23 12 28-15 22 15 30-9 26M170 53l13 24-13 19 21 22-12 22 8 23-24 19-9 20M151 53l8 23-12 28 15 22-15 30 9 26" stroke="#7698b3" stroke-width="1.5"/>
+                </g>
+                <path d="M20 126h220M130 8v234" stroke="#68cfdf" stroke-width="1" stroke-dasharray="4 5"/>
+                <path d="m163 86 20 9 9 24-12 21-24-4-10-26Z" fill="#28b7c7" fill-opacity=".32" stroke="#75e3eb" stroke-width="2"/>
+                <g stroke="#75e3eb" stroke-width="2" fill="none"><path d="M150 78h-12v12m48-12h14v12m0 43v15h-14m-48-15v15h12"/></g>
+              </svg>
+              <span class="scan-caption">画像の構造や信号を調べる</span>
+            </div>
+            <div class="feature-panel">
+              <p>画像の特徴</p>
+              <div class="feature-row"><span>形状</span><svg viewBox="0 0 90 32" aria-hidden="true"><path d="m17 16 12-10 23 2 16 14-18 5-24-2Z" fill="#28b7c744" stroke="#75e3eb" stroke-width="2"/></svg></div>
+              <div class="feature-row"><span>信号</span><svg viewBox="0 0 90 32" aria-hidden="true"><path d="m3 24 14-2 11-15 13 18 13-12 14 6 18-13" fill="none" stroke="#75e3eb" stroke-width="2"/></svg></div>
+              <div class="feature-row"><span>分布</span><svg viewBox="0 0 90 32" aria-hidden="true"><g fill="#75e3eb"><rect x="9" y="20" width="8" height="8"/><rect x="23" y="11" width="8" height="17"/><rect x="37" y="3" width="8" height="25"/><rect x="51" y="9" width="8" height="19"/><rect x="65" y="18" width="8" height="10"/></g></svg></div>
+              <div class="model-label">統計解析<br>機械学習</div>
+            </div>
+          </div>
+          <div class="evaluation-row"><span>評価すること</span><ul><li>画質</li><li>病気の鑑別</li><li>レポートの正確さ</li></ul></div>
+          <figcaption>医用画像と解析の概念図。実際の医療画像や測定結果ではありません。</figcaption>
+        </figure>
+      </div>
+      <div class="container hero-bottom"><span>研究分野</span><ul><li>医用画像・撮影技術</li><li>画像解析・機械学習</li><li>生成AI・言語モデル</li></ul></div>
+    </section>
+
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow" lang="en">Research</p><h2 id="research-title">研究内容</h2></div>
+          <p class="section-intro">造影剤を減らしても、必要な画質を保てるか。MRIの特徴から、病気の違いを見分けられるか。撮影条件や解析方法を比較し、画像と数値で確かめます。</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <div class="research-diagram" aria-hidden="true"><svg viewBox="0 0 280 120"><g fill="none" stroke="#559485" stroke-width="1.4"><ellipse cx="140" cy="60" rx="54" ry="47"/><ellipse cx="140" cy="60" rx="37" ry="32"/><path d="M34 60h67m78 0h67M140 2v24m0 68v24" stroke-dasharray="3 5"/><path d="m120 60 12 12 29-29" stroke-width="2"/><path d="M56 31h24M56 89h24m120-58h24m-24 58h24"/></g><circle cx="34" cy="60" r="4" fill="#8ca26a"/><circle cx="246" cy="60" r="4" fill="#8ca26a"/></svg></div>
+            <h3>CT・MRIの撮影と再構成</h3>
+            <p>CTの被ばくや造影剤量を減らすときには、画質への影響も調べる必要があります。撮影条件や画像の再構成方法を変え、検査の負担と画質の関係を検討します。</p>
+            <ul class="keyword-list" aria-label="関連キーワード"><li>CT・MRI</li><li>撮影条件の最適化</li><li>画像再構成</li></ul>
+            <a class="card-link" href="#story-imaging">撮影・再構成の論文 <span aria-hidden="true">↓</span></a>
+          </article>
+          <article class="research-card">
+            <div class="research-diagram" aria-hidden="true"><svg viewBox="0 0 280 120"><g fill="none" stroke="#8eafa2" stroke-width="1.2"><path d="M59 25 125 43 59 95m0-70 66 62L59 60l66-17m0 44 62-62v70l-62-52 62-18m0 70 49-35-49-35"/></g><g fill="#347f73"><circle cx="59" cy="25" r="5"/><circle cx="59" cy="60" r="5"/><circle cx="59" cy="95" r="5"/><circle cx="125" cy="43" r="7"/><circle cx="125" cy="87" r="7"/><circle cx="187" cy="25" r="5"/><circle cx="187" cy="95" r="5"/></g><circle cx="236" cy="60" r="10" fill="#a3b779"/></svg></div>
+            <h3>画像解析と機械学習</h3>
+            <p>画像の形や信号の強さを数値として扱い、病気の鑑別に使えるかを調べます。MRIによる脳腫瘍の鑑別や、深層学習を用いた画像のノイズ低減などが研究対象です。</p>
+            <ul class="keyword-list" aria-label="関連キーワード"><li>ラジオミクス</li><li>機械学習</li><li>深層学習</li></ul>
+            <a class="card-link" href="#story-learning">画像解析の論文 <span aria-hidden="true">↓</span></a>
+          </article>
+          <article class="research-card">
+            <div class="research-diagram" aria-hidden="true"><svg viewBox="0 0 280 120"><g fill="none" stroke="#559485" stroke-width="1.3"><rect x="49" y="20" width="72" height="80" rx="3"/><path d="M64 40h42M64 52h29M64 64h42M64 76h22M130 60h26m-8-7 8 7-8 7"/><path d="M169 27h62v54h-30l-16 13V81h-16Z"/></g><g fill="#347f73"><circle cx="185" cy="54" r="3"/><circle cx="200" cy="54" r="3"/><circle cx="215" cy="54" r="3"/></g><circle cx="116" cy="96" r="10" fill="#b5c98f"/></svg></div>
+            <h3>生成AIと読影レポート</h3>
+            <p>自然な文章でも、医学的に正しいとは限りません。AIが生成した読影レポートや、MRI所見を読んだ言語モデルの鑑別を、放射線科医のレポートや鑑別と比較しています。</p>
+            <ul class="keyword-list" aria-label="関連キーワード"><li>生成AI・LLM</li><li>マルチモーダル</li><li>性能評価</li></ul>
+            <a class="card-link" href="#story-language">生成AIの論文 <span aria-hidden="true">↓</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow" lang="en">Selected publications</p><h2 id="achievements-title">中浦 猛の代表業績</h2></div>
+          <div class="section-intro"><p>CT・SPECTの画像融合や検査の負担を減らす研究を経て、機械学習、生成AIの評価へと対象を広げてきました。</p><p class="selection-note">筆頭著者・第2著者の論文を中心に掲載しています。<br>年表示は、掲載した代表論文の出版年です。</p></div>
+        </div>
+        <article class="featured-study" aria-labelledby="featured-title">
+          <div class="featured-copy">
+            <p class="study-reference">研究例 <span>2011 / Radiology / 筆頭著者</span></p>
+            <h3 id="featured-title">造影剤を減らしたCTで、<br>画質を保つには。</h3>
+            <p>造影CTでは、画像を見やすくするために造影剤を使います。一方、腎機能に問題のある患者さんでは、その使用量が課題になります。</p>
+            <p>2011年の研究では、低い管電圧と高い管電流時間積を組み合わせ、腹部CTの造影剤量を減らす撮影条件を検討しました。</p>
+            <a class="text-link" href="#story-imaging">この研究の論文情報 <span aria-hidden="true">↓</span></a>
+          </div>
+          <figure class="study-diagram">
+            <div class="study-stage"><span class="stage-label">変える条件</span><strong>管電圧・管電流時間積</strong><span>CTの撮影条件を調整</span></div>
+            <div class="study-connector" aria-hidden="true">↓</div>
+            <div class="study-stage study-stage-result"><span class="stage-label">調べること</span><div class="study-balance"><strong>造影剤量</strong><span aria-hidden="true">×</span><strong>画質</strong></div><span>両方を評価する</span></div>
+            <figcaption>研究の着眼点を示した概念図</figcaption>
+          </figure>
+        </article>
+        <div class="journey-grid">
+          <article class="journey-card" id="story-fusion">
+            <div class="journey-top"><span class="journey-year">2005</span><span class="small-label">画像融合</span></div>
+            <h3>CTとSPECTで、心臓の形と血流を重ねる</h3>
+            <p>CTでは心臓の形や血管を、SPECTでは心筋の血流を捉えます。この2種類の画像を三次元的に融合し、形と機能を合わせて見る方法を研究しました。</p>
+            <div class="journal-highlight"><span>American Journal of Roentgenology</span><span class="author-badge">筆頭著者</span></div>
+            <details class="paper-details">
+              <summary>代表論文を見る <span class="details-count">1件</span><span class="details-plus" aria-hidden="true"></span></summary>
+              <div class="paper-list">
+                <article class="paper" data-bibkey="nakaura2005three">
+                  <p class="paper-authors"><strong>Nakaura T</strong>, Utsunomiya D, Shiraishi S, et al.</p>
+                  <h4 lang="en">Three-dimensional cardiac image fusion using new CT angiography and SPECT methods.</h4>
+                  <p class="paper-citation">American Journal of Roentgenology. 2005;185(6):1554–1557.</p>
+                  <a href="https://scholar.google.com/scholar?q=Three-dimensional+cardiac+image+fusion+using+new+CT+angiography+and+SPECT+methods" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+              </div>
+            </details>
+          </article>
+          <article class="journey-card" id="story-imaging">
+            <div class="journey-top"><span class="journey-year">2011–2017</span><span class="small-label">撮影・再構成</span></div>
+            <h3>CTの造影剤量・被ばくと画質を調べる</h3>
+            <p>低管電圧撮影や、計算を繰り返して画像を作る逐次近似再構成を用いた研究です。腹部CTの造影剤量低減、被ばくと画質の関係、非造影腰椎CTでの再構成方法を検討しました。</p>
+            <div class="journal-highlight"><span>Radiology</span><span class="author-badge">筆頭・第2著者</span></div>
+            <details class="paper-details">
+              <summary>代表論文を見る <span class="details-count">3件</span><span class="details-plus" aria-hidden="true"></span></summary>
+              <div class="paper-list">
+                <article class="paper" data-bibkey="nakaura2011abdominal">
+                  <span class="paper-role">筆頭著者</span><p class="paper-authors"><strong>Nakaura T</strong>, Awai K, Maruyama N, et al.</p>
+                  <h4 lang="en">Abdominal dynamic CT in patients with renal dysfunction: contrast agent dose reduction with low tube voltage and high tube current–time product settings at 256–detector row CT.</h4>
+                  <p class="paper-citation">Radiology. 2011;261(2):467–476.</p>
+                  <a href="https://scholar.google.com/scholar?q=Abdominal+dynamic+CT+in+patients+with+renal+dysfunction+Nakaura+2011" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+                <article class="paper" data-bibkey="nakaura2012low">
+                  <span class="paper-role">筆頭著者</span><p class="paper-authors"><strong>Nakaura T</strong>, Nakamura S, Maruyama N, et al.</p>
+                  <h4 lang="en">Low contrast agent and radiation dose protocol for hepatic dynamic CT of thin adults at 256–detector row CT: effect of low tube voltage and hybrid iterative reconstruction algorithm on image quality.</h4>
+                  <p class="paper-citation">Radiology. 2012;264(2):445–454.</p>
+                  <a href="https://scholar.google.com/scholar?q=Low+contrast+agent+and+radiation+dose+protocol+for+hepatic+dynamic+CT+Nakaura+2012" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+                <article class="paper" data-bibkey="iyama2017feasibility">
+                  <span class="paper-role">第2著者</span><p class="paper-authors">Iyama Y, <strong>Nakaura T</strong>, Iyama A, et al.</p>
+                  <h4 lang="en">Feasibility of iterative model reconstruction for unenhanced lumbar CT.</h4>
+                  <p class="paper-citation">Radiology. 2017;284(1):153–160.</p>
+                  <a href="https://scholar.google.com/scholar?q=Feasibility+of+iterative+model+reconstruction+for+unenhanced+lumbar+CT" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+              </div>
+            </details>
+          </article>
+          <article class="journey-card" id="story-learning">
+            <div class="journey-top"><span class="journey-year">2018–2022</span><span class="small-label">機械学習・深層学習</span></div>
+            <h3>MRIの特徴による鑑別とノイズ低減</h3>
+            <p>複数のMRI画像の情報を使い、機械学習で脳腫瘍を鑑別する方法を検討しました。また、下垂体MRIでは、深層学習を用いたノイズ低減法を従来の方法と比較しました。</p>
+            <div class="journal-highlight"><span>European Radiology ほか</span><span class="author-badge">第2著者</span></div>
+            <details class="paper-details">
+              <summary>代表論文を見る <span class="details-count">2件</span><span class="details-plus" aria-hidden="true"></span></summary>
+              <div class="paper-list">
+                <article class="paper" data-bibkey="nakagawa2018machine">
+                  <p class="paper-authors">Nakagawa M, <strong>Nakaura T</strong>, Namimoto T, et al.</p>
+                  <h4 lang="en">Machine learning based on multi-parametric magnetic resonance imaging to differentiate glioblastoma multiforme from primary cerebral nervous system lymphoma.</h4>
+                  <p class="paper-citation">European Journal of Radiology. 2018;108:147–154.</p>
+                  <a href="https://scholar.google.com/scholar?q=Machine+learning+multi-parametric+magnetic+resonance+imaging+glioblastoma+Nakagawa+Nakaura+2018" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+                <article class="paper" data-bibkey="uetani2022hybrid">
+                  <p class="paper-authors">Uetani H, <strong>Nakaura T</strong>, Kitajima M, et al.</p>
+                  <h4 lang="en">Hybrid deep-learning-based denoising method for compressed sensing in pituitary MRI: comparison with the conventional wavelet-based denoising method.</h4>
+                  <p class="paper-citation">European Radiology. 2022;32(7):4527–4536.</p>
+                  <a href="https://scholar.google.com/scholar?q=Hybrid+deep-learning-based+denoising+method+for+compressed+sensing+in+pituitary+MRI" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+              </div>
+            </details>
+          </article>
+          <article class="journey-card" id="story-language">
+            <div class="journey-top"><span class="journey-year">2024–2026</span><span class="small-label">生成AI</span></div>
+            <h3>読影レポート生成とLLMの鑑別評価</h3>
+            <p>GPTが作成した読影レポートを、放射線科医のレポートと比較しました。2026年の論文では、構造化したMRIレポートを読む言語モデルと、画像を見る放射線科医の脳腫瘍鑑別を比較しています。</p>
+            <div class="journal-highlight"><span>European Radiology ほか</span><span class="author-badge">筆頭著者</span></div>
+            <details class="paper-details">
+              <summary>代表論文を見る <span class="details-count">2件</span><span class="details-plus" aria-hidden="true"></span></summary>
+              <div class="paper-list">
+                <article class="paper" data-bibkey="nakaura2024preliminary">
+                  <p class="paper-authors"><strong>Nakaura T</strong>, Yoshida N, Kobayashi N, et al.</p>
+                  <h4 lang="en">Preliminary assessment of automated radiology report generation with generative pre-trained transformers: comparing results to radiologist-generated reports.</h4>
+                  <p class="paper-citation">Japanese Journal of Radiology. 2024;42(2):190–200.</p>
+                  <a href="https://scholar.google.com/scholar?q=Preliminary+assessment+of+automated+radiology+report+generation+with+generative+pre-trained+transformers" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+                <article class="paper" data-bibkey="nakaura2026intra">
+                  <p class="paper-authors"><strong>Nakaura T</strong>, Uetani H, Yoshida N, et al.</p>
+                  <h4 lang="en">Intra-axial primary brain tumor differentiation: comparing large language models on structured MRI reports vs. radiologists on images.</h4>
+                  <p class="paper-citation">European Radiology. 2026;36(2):1594–1604.</p>
+                  <a href="https://scholar.google.com/scholar?q=Intra-axial+primary+brain+tumor+differentiation+comparing+large+language+models+on+structured+MRI+reports" target="_blank" rel="noopener noreferrer">Google Scholarで探す <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+                </article>
+              </div>
+            </details>
+          </article>
+        </div>
+        <div class="scholar-row"><p>ほかの論文を探す<span>全業績・引用指標（引用数・h-index）は、各プロフィールでご確認ください。</span></p><div class="scholar-links"><a class="button button-primary" href="https://scholar.google.co.jp/citations?hl=ja&amp;user=WX1VscoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a><a class="button button-secondary" href="https://researchmap.jp/morukichi33" target="_blank" rel="noopener noreferrer">researchmap <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a></div></div>
+      </div>
+    </section>
+
+    <section class="section students-section" id="students" aria-labelledby="students-title">
+      <div class="container">
+        <div class="students-intro">
+          <div><p class="eyebrow" lang="en">For students</p><h2 id="students-title">配属・進学・見学の相談</h2></div>
+          <div><p class="students-lead">医療のデータを扱う研究に興味がある方は、メールでご相談ください。</p><p>画像処理、統計、プログラミングなど、今学んでいることや興味のあることを教えてください。例えば、次のような関心から研究テーマを考えられます。</p></div>
+        </div>
+        <div class="student-topics">
+          <div><h3>画像処理に興味がある</h3><p>撮影条件やノイズ低減の方法を変えると、画像がどう変わるかを調べる。</p><span class="topic-skills">画像処理・画質評価</span></div>
+          <div><h3>学んだ統計を使いたい</h3><p>画像の特徴を数値にし、病気の違いを見分ける手がかりになるか確かめる。</p><span class="topic-skills">統計・機械学習</span></div>
+          <div><h3>生成AIを調べたい</h3><p>同じ医療情報を複数のモデルに与え、回答の違いや誤りを比較する。</p><span class="topic-skills">言語モデル・比較実験</span></div>
+        </div>
+        <div class="student-contact"><div><h3>相談先：中浦 猛（教授）</h3><p>メールには、現在の所属と相談したいことをご記入ください。</p></div><a class="button button-student" href="mailto:nakaura.takeshi@kuh.kumamoto-u.ac.jp?subject=%E7%A0%94%E7%A9%B6%E5%AE%A4%E3%81%AE%E9%85%8D%E5%B1%9E%E3%83%BB%E9%80%B2%E5%AD%A6%E3%83%BB%E8%A6%8B%E5%AD%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">メールで相談する <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section member-section" id="member" aria-labelledby="member-title">
+      <div class="container member-grid">
+        <div class="member-identity"><p class="eyebrow">教員紹介</p><p class="member-position">教授</p><h2 id="member-title">中浦 猛</h2><p class="member-name-en" lang="en">Takeshi Nakaura, MD, PhD</p></div>
+        <div class="member-copy"><p class="member-affiliation">熊本大学 半導体・デジタル研究教育機構<br>総合情報学部門 データサイエンス分野</p><p class="member-description">CT・SPECTの画像融合、低管電圧CTによる造影剤量の低減、MRIの機械学習などを研究してきました。現在は読影レポートの生成や、大規模言語モデルによる鑑別の評価にも取り組んでいます。</p><div class="profile-links"><a class="text-link" href="https://researchmap.jp/morukichi33" target="_blank" rel="noopener noreferrer">researchmap <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a><a class="text-link" href="https://scholar.google.co.jp/citations?hl=ja&amp;user=WX1VscoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow" lang="en">Contact & access</p><h2 id="contact-title">お問い合わせ・アクセス</h2></div><p class="section-intro">研究・共同研究のご相談も、<br>中浦 猛までお寄せください。</p></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-label">メール</p><a class="email-link" href="mailto:nakaura.takeshi@kuh.kumamoto-u.ac.jp">nakaura.takeshi@kuh.kumamoto-u.ac.jp <span aria-hidden="true">↗</span></a>
+            <p class="secondary-email">連絡先（予備）：<a href="mailto:kff00712@nifty.com">kff00712@nifty.com</a></p>
+            <div class="contact-detail-grid"><div><p class="contact-label">電話</p><a class="phone-link" href="tel:+81963422266">096-342-2266</a><p class="contact-small">内線：2266</p></div><div><p class="contact-label">所在地</p><p class="location-name">黒髪キャンパス<br>D-Square 5F</p></div></div>
+            <address>〒860-8555<br>熊本市中央区黒髪2-39-1 D-Square 5F<br>熊本大学 半導体・デジタル研究教育機構<br>総合情報学部門 データサイエンス分野</address>
+            <a class="text-link map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%86%8A%E6%9C%AC%E5%A4%A7%E5%AD%A6%20D-Square%20%E7%86%8A%E6%9C%AC%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%BB%92%E9%AB%AA2-39-1" target="_blank" rel="noopener noreferrer">Google Mapsで場所を確認 <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a>
+          </div>
+          <div class="campus-card"><p class="campus-card-top">熊本大学 黒髪キャンパス</p><div class="campus-card-main"><span class="campus-building">D-Square <span>5F</span></span><span class="campus-field">総合情報学部門 データサイエンス分野</span></div><div class="english-address" lang="en"><strong>Department of Data Science</strong><p>Research and Education Institute for Semiconductors and Informatics, Kumamoto University</p><p>Kurokami 2-39-1, Kumamoto, 860-8555, Japan<br>Tel. +81-96-342-2266</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="footer-brand" href="#home">Nakaura Lab<span>熊本大学 データサイエンス分野 中浦研究室</span></a><a class="back-top" href="#home">ページの先頭へ <span aria-hidden="true">↑</span></a></div><div class="container footer-bottom"><span>© <span id="copyright-year">2026</span> Nakaura Laboratory, Kumamoto University</span><a href="https://www.kumamoto-u.ac.jp/" target="_blank" rel="noopener noreferrer">熊本大学 <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブ）</span></a></div></footer>
+</body>
+</html>

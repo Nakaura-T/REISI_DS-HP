@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": {
+    "paths": ["./opencode/skills"]
+  },
+  "command": {
+    "lab-design": {
+      "description": "研究室HPの目的と代表業績を踏まえて、デザインの作成・改善を行う",
+      "template": "{file:./opencode/commands/lab-design.md}"
+    },
+    "lab-review": {
+      "description": "研究室HPを画面・操作・研究業績の伝わりやすさからレビューする",
+      "template": "{file:./opencode/commands/lab-review.md}"
+    }
+  }
+}
