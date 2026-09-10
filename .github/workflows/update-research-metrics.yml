@@ -1,0 +1,29 @@
+name: Update research metrics
+
+on:
+  schedule:
+    - cron: "20 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/update-research-metrics.mjs
+      - name: Commit updated metrics
+        run: |
+          if git diff --quiet -- data/research-metrics.json; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research-metrics.json
+          git commit -m "Update research metrics"
+          git push

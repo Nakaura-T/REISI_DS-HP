@@ -19,7 +19,8 @@ python3 -m http.server 8000 --bind 127.0.0.1
 - 白・深いネイビー・青緑を基調に、医療と情報学の接点を表現。
 - トップ：「医療の問いを、データの力で。」
 - 研究内容：撮影・画像再構成／画像解析・機械学習／生成AI・言語モデル。
-- 研究業績：2005年から2026年の代表業績を4つの流れとして紹介。日本語の説明を先に読み、開閉式の欄で8件の書誌情報と著者順を確認できます。
+- 研究業績：4つの分野に分けて研究の歩みと代表論文を紹介。開閉式の欄で10件の書誌情報と著者順を確認できます。
+- 研究指標：OpenAlexの収録データを毎週集計し、総被引用数、h-index、収録論文数を表示。
 - 学生の方へ：興味の入り口となる3つの問いと、配属・進学・見学の相談先。
 - 教員紹介、連絡先、アクセス。全業績への案内はGoogle Scholarリンクに集約。
 
@@ -47,6 +48,8 @@ https://ユーザー名.github.io/nakaura-lab/
 ```
 
 CSS・JavaScript・画像はすべて相対パスなので、プロジェクト名付きのGitHub Pagesでもそのまま動きます。`Paper_Data/` は編集のための参照資料で、サイトの動作には必要ありません。
+
+GitHub Actionsの実行を許可すると、`.github/workflows/update-research-metrics.yml` が毎週月曜0:20 UTCにOpenAlexを取得し、`data/research-metrics.json` を更新します。初回はGitHubの **Actions** から `Update research metrics` を手動実行してください。自動コミットを許可するため、リポジトリの **Settings → Actions → General → Workflow permissions** で **Read and write permissions** を選択します。OpenAlexの集計値はGoogle Scholarとは一致しない場合があります。
 
 ## 内容を更新する
 

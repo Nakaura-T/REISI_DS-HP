@@ -71,3 +71,40 @@ if ("IntersectionObserver" in window) {
 
 const year = document.querySelector("#copyright-year");
 if (year) year.textContent = String(new Date().getFullYear());
+
+const metricFields = document.querySelectorAll("[data-metric]");
+if (metricFields.length) {
+  fetch("./data/research-metrics.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`Metrics request failed: ${response.status}`);
+      return response.json();
+    })
+    .then((metrics) => {
+      const numberFormat = new Intl.NumberFormat("ja-JP");
+      document.querySelectorAll('[data-metric="cited_by_count"]').forEach((field) => {
+        field.textContent = numberFormat.format(metrics.cited_by_count);
+      });
+      document.querySelectorAll('[data-metric="h_index"]').forEach((field) => {
+        field.textContent = numberFormat.format(metrics.h_index);
+      });
+      document.querySelectorAll('[data-metric="works_count"]').forEach((field) => {
+        field.textContent = numberFormat.format(metrics.works_count);
+      });
+      document.querySelectorAll('[data-metric="updated_at"]').forEach((field) => {
+        const updatedAt = new Date(metrics.updated_at);
+        field.dateTime = metrics.updated_at;
+        field.textContent = new Intl.DateTimeFormat("ja-JP", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }).format(updatedAt);
+      });
+    })
+    .catch(() => {
+      metricFields.forEach((field) => {
+        field.textContent = "—";
+      });
+      const errorNote = document.querySelector("[data-metrics-error]");
+      if (errorNote) errorNote.hidden = false;
+    });
+}
