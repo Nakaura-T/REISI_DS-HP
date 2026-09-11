@@ -120,9 +120,23 @@ h2 { margin-top: 12px; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.5; fo
 .card-link:hover { color: var(--blue); }
 .card-link span { font-size: 20px; }
 .achievements-section { background: var(--wash); }
-.achievements-heading { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 32px 48px; }
+.achievements-heading { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; gap: 32px 48px; }
 .achievements-title-group { grid-column: 1 / -1; }
-.achievements-heading .section-intro { max-width: none; padding-left: 32px; border-left: 1px solid #b7cfe6; }
+.researcher-profile { min-width: 0; }
+.clinical-profile { margin-top: 26px; }
+.clinical-profile h3 { font-size: 22px; font-weight: 600; line-height: 1.7; }
+.clinical-profile p { margin-top: 14px; color: var(--muted); font-size: 14px; line-height: 1.95; }
+.clinical-profile strong { color: var(--ink); font-weight: 600; }
+.clinical-profile .text-link { margin-top: 14px; color: var(--blue); }
+.career-summary { min-width: 0; padding-left: 32px; border-left: 1px solid #b7cfe6; }
+.career-summary h3 { margin-bottom: 12px; font-size: 20px; line-height: 1.7; }
+.career-list { margin: 0; }
+.career-list > div { display: grid; grid-template-columns: 98px minmax(0, 1fr); gap: 14px; padding-block: 13px; border-bottom: 1px solid var(--line); font-size: 13px; line-height: 1.85; }
+.career-list dt { color: var(--blue); font-family: Arial, var(--sans); font-weight: 600; font-variant-numeric: tabular-nums; }
+.career-list dd { margin: 0; color: var(--muted); }
+.career-list .career-current { border-bottom: 0; }
+.career-current dd { color: var(--ink); font-weight: 600; }
+.achievements-heading .achievements-intro { grid-column: 1 / -1; max-width: none; padding-top: 26px; border-top: 1px solid #b7cfe6; }
 .author-card { display: grid; grid-template-columns: 156px minmax(0, 1fr); align-items: center; gap: 24px; min-width: 0; }
 .author-card .member-photo { width: 156px; height: auto; aspect-ratio: 3 / 4; border-radius: 6px; }
 .author-details { min-width: 0; }
@@ -183,7 +197,9 @@ h2 { margin-top: 12px; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.5; fo
 .students-lead + p { margin-top: 16px; color: var(--muted); font-size: 15px; }
 .admission-affiliation { margin-top: 20px; padding: 16px 18px; color: var(--muted); background: #fff; border: 1px solid #dfd2be; font-size: 14px; line-height: 1.9; }
 .admission-affiliation a { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; color: var(--blue); font-weight: 500; text-decoration: underline; }
-.lab-photo-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); background: var(--wash); border: 1px dashed var(--line); font-size: 13px; line-height: 1.7; margin-top: 24px; aspect-ratio: 16 / 9; }
+.lab-photo { margin-top: 24px; }
+.lab-photo img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.lab-photo figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .member-photo { display: block; object-fit: cover; object-position: 50% 15%; }
 .student-topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; margin-top: 38px; padding-block: 28px; border-top: 1px solid #dfd2be; border-bottom: 1px solid #dfd2be; }
 .student-topics > div { display: flex; flex-direction: column; }
@@ -298,7 +314,7 @@ address { font-style: normal; color: var(--muted); font-size: 14px; line-height:
   .research-card:last-child .research-diagram { display: none; }
   .section-heading { gap: 30px; }
   .achievements-heading { grid-template-columns: minmax(0, 1fr); }
-  .achievements-heading .section-intro { padding: 24px 0 0; border-left: 0; border-top: 1px solid #b7cfe6; }
+  .career-summary { padding: 26px 0 0; border-left: 0; border-top: 1px solid #b7cfe6; }
   h2 { font-size: 30px; }
   .journey-grid { gap: 20px; }
   .journey-card { padding: 24px 23px 0; }
@@ -350,6 +366,8 @@ address { font-style: normal; color: var(--muted); font-size: 14px; line-height:
   .hero-bottom > span { font-size: 12px; }
   .section-heading { flex-direction: column; align-items: flex-start; gap: 20px; margin-bottom: 28px; }
   .achievements-heading { gap: 28px; }
+  .clinical-profile h3 { font-size: 20px; }
+  .career-list > div { grid-template-columns: 90px minmax(0, 1fr); gap: 12px; }
   .author-card { grid-template-columns: 120px minmax(0, 1fr); gap: 0 20px; }
   .author-card .member-photo { grid-column: 1; grid-row: 1 / 3; width: 120px; }
   .author-details { display: contents; }
@@ -405,7 +423,7 @@ address { font-style: normal; color: var(--muted); font-size: 14px; line-height:
   .feature-row > span { font-size: 12px; }
   .scan-caption { font-size: 10px; }
   h2 { font-size: 26px; }
-  .author-card { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .author-card { gap: 0 14px; }
   .journey-top { flex-direction: column; align-items: flex-start; gap: 5px; }
   .journey-card { padding-inline: 19px; }
   .research-card h3 { font-size: 20px; }
